@@ -1,0 +1,83 @@
+[
+  {
+    "name": "hero",
+    "prompt": "Premium CPAUL fashion brand photography. Use the provided logo as branding reference: preserve the outlined shield shape with intertwined serif C and P, with serif CPAUL wordmark below, translated into muted antique gold embroidery. Only garment branding, no page design, no UI, no headline, no other copy or watermark. Sophisticated realistic fabric, refined dramatic studio light. Use case: photorealistic-natural. Asset: editorial hero transparent cutout. A handsome adult male fashion model wearing a heavyweight black hoodie with small muted gold CPAUL shield and wordmark embroidery on left chest, black trousers. Centered relaxed confident pose facing camera, hood down, full head hair and both arms and hands entirely visible, framed from upper thighs up with generous transparent margin all around. Premium studio fashion photo with sculpting soft key light and subtle rim light. Genuine transparent alpha background, no backdrop, no fake checkerboard. Portrait composition 4:5.",
+    "source": "/workspace/scratch/cf3e8368edaa/generated_images/exec-ae417e36-c5c3-4881-8e78-8523d478f847.png",
+    "destination": "/workspace/scratch/cf3e8368edaa/new-cpaul-assets/hero.png",
+    "provenance": "built-in image_gen",
+    "dimensions": [
+      1122,
+      1402
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ]
+  },
+  {
+    "name": "hoodie-black",
+    "prompt": "Premium CPAUL fashion brand photography. Use the provided logo as branding reference: preserve the outlined shield shape with intertwined serif C and P, with serif CPAUL wordmark below, translated into muted antique gold embroidery. Only garment branding, no page design, no UI, no headline, no other copy or watermark. Sophisticated realistic fabric, refined dramatic studio light. Use case: product-mockup. One standalone heavyweight black pullover hoodie, small gold CPAUL shield and wordmark embroidery on left chest, kangaroo pocket, substantial hood, ribbed cuffs. Full garment isolated on dark charcoal grey seamless studio background, centered, realistic draping ghost mannequin without visible mannequin or person. Full hood and sleeves and hem visible with generous margins. Soft directional top left light, subtle floor shadow, luxury fashion catalog. Portrait 4:5.",
+    "source": "/workspace/scratch/cf3e8368edaa/generated_images/exec-772ce6b2-5559-4353-9fd3-8c5baddb19ab.png",
+    "destination": "/workspace/scratch/cf3e8368edaa/new-cpaul-assets/hoodie-black.png",
+    "provenance": "built-in image_gen",
+    "dimensions": [
+      1122,
+      1402
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "name": "hoodie-cream",
+    "prompt": "Premium CPAUL fashion brand photography. Use the provided logo as branding reference: preserve the outlined shield shape with intertwined serif C and P, with serif CPAUL wordmark below, translated into muted antique gold embroidery. Only garment branding, no page design, no UI, no headline, no other copy or watermark. Sophisticated realistic fabric, refined dramatic studio light. Use case: product-mockup. One standalone heavyweight ivory cream pullover hoodie, small muted antique gold CPAUL shield and wordmark embroidery on left chest, kangaroo pocket, substantial hood, ribbed cuffs. Full garment isolated on dark charcoal grey seamless studio background, centered, realistic draping ghost mannequin without visible mannequin or person. Full hood and sleeves and hem visible with generous margins. Soft directional top left light, subtle floor shadow, luxury fashion catalog. Portrait 4:5.",
+    "source": "/workspace/scratch/cf3e8368edaa/generated_images/exec-24422516-8bad-4b81-9a28-f8721b1381c3.png",
+    "destination": "/workspace/scratch/cf3e8368edaa/new-cpaul-assets/hoodie-cream.png",
+    "provenance": "built-in image_gen",
+    "dimensions": [
+      1122,
+      1402
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "name": "tee-black",
+    "prompt": "Premium CPAUL fashion brand photography. Use the provided logo as branding reference: preserve the outlined shield shape with intertwined serif C and P, with serif CPAUL wordmark below, translated into muted antique gold embroidery. Only garment branding, no page design, no UI, no headline, no other copy or watermark. Sophisticated realistic fabric, refined dramatic studio light. Use case: product-mockup. One standalone heavyweight black cotton oversized short sleeve t-shirt, small muted gold CPAUL shield and wordmark embroidery on left chest. Full garment isolated on dark charcoal grey seamless studio background, centered, realistic draping ghost mannequin without visible mannequin or person. Full neckline sleeves and hem visible with generous margins. Soft directional top left light, subtle floor shadow, luxury fashion catalog. Portrait 4:5.",
+    "source": "/workspace/scratch/cf3e8368edaa/generated_images/exec-76379d9d-a7e8-444b-92f4-8d1a7555c574.png",
+    "destination": "/workspace/scratch/cf3e8368edaa/new-cpaul-assets/tee-black.png",
+    "provenance": "built-in image_gen",
+    "dimensions": [
+      1122,
+      1402
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "name": "cap-black",
+    "prompt": "Premium CPAUL fashion brand photography. Use the provided logo as branding reference: preserve the outlined shield shape with intertwined serif C and P, with serif CPAUL wordmark below, translated into muted antique gold embroidery. Only garment branding, no page design, no UI, no headline, no other copy or watermark. Sophisticated realistic fabric, refined dramatic studio light. Use case: product-mockup. One standalone black premium six panel baseball cap, muted gold CPAUL shield and wordmark embroidery centered on front. Entire cap and curved brim visible, in refined three quarter view on charcoal grey studio surface and seamless background, centered with generous margins. Realistic cotton twill and fine stitching. Soft directional top left light, subtle floor shadow, luxury fashion catalog. Portrait 4:5.",
+    "source": "/workspace/scratch/cf3e8368edaa/generated_images/exec-843563bc-44e0-4191-835a-331629b304c6.png",
+    "destination": "/workspace/scratch/cf3e8368edaa/new-cpaul-assets/cap-black.png",
+    "provenance": "built-in image_gen",
+    "dimensions": [
+      1122,
+      1402
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  },
+  {
+    "name": "embroidery-macro",
+    "prompt": "Premium CPAUL fashion brand photography. Use the provided logo as branding reference: preserve the outlined shield shape with intertwined serif C and P, with serif CPAUL wordmark below, translated into muted antique gold embroidery. Only garment branding, no page design, no UI, no headline, no other copy or watermark. Sophisticated realistic fabric, refined dramatic studio light. Use case: photorealistic-natural. Extreme macro luxury fashion textile photograph of muted antique gold CPAUL shield with serif intertwined CP and CPAUL wordmark embroidered into thick matte black cotton fabric. Dramatic diagonal shaft of warm light crossing the embroidered threads, deep charcoal shadows, tactile stitching individual threads, softly folded black fabric. Wide landscape 16:9 composition, emblem slightly left of center, purely a real photographic garment detail.",
+    "source": "/workspace/scratch/cf3e8368edaa/generated_images/exec-eb993dd8-c0ec-457b-86e4-98e8bfe26550.png",
+    "destination": "/workspace/scratch/cf3e8368edaa/new-cpaul-assets/embroidery-macro.png",
+    "provenance": "built-in image_gen",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "mode": "RGB",
+    "alpha_extrema": null
+  }
+]

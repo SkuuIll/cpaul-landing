@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://cpaul.store/</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://cpaul.store/assets/images/campaign-hero.webp</image:loc>
+      <image:title>CPAUL — Modelo con buzo negro y emblema bordado</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cpaul.store/assets/images/campaign-hoodie-black-800.webp</image:loc>
+      <image:title>Buzo Signature negro con bordado dorado CPAUL</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cpaul.store/assets/images/campaign-hoodie-cream-800.webp</image:loc>
+      <image:title>Buzo Essential crudo con bordado CPAUL</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cpaul.store/assets/images/campaign-tee-800.webp</image:loc>
+      <image:title>Remera Emblem negra con escudo CPAUL</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cpaul.store/assets/images/campaign-cap-800.webp</image:loc>
+      <image:title>Gorra Heritage negra con emblema CPAUL bordado</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cpaul.store/assets/images/campaign-craft.webp</image:loc>
+      <image:title>Detalle de bordado artesanal dorado CPAUL sobre tela negra</image:title>
+    </image:image>
+  </url>
+</urlset>

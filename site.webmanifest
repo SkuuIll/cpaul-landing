@@ -1,0 +1,20 @@
+{
+  "name": "CPAUL — Indumentaria & Bordados",
+  "short_name": "CPAUL",
+  "description": "Indumentaria y bordados personalizados con identidad propia en Charata, Chaco.",
+  "id": "/",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#121211",
+  "theme_color": "#121211",
+  "icons": [
+    {
+      "src": "assets/images/logo.webp",
+      "sizes": "192x192 512x512",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    }
+  ]
+}

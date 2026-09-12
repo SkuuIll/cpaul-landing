@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>404 — Página no encontrada | CPAUL</title>
+<meta name="description" content="La página que buscas no existe en CPAUL. Regresá al inicio para descubrir nuestra colección de buzos, remeras y gorras bordadas.">
+<meta name="theme-color" content="#111211">
+<meta name="robots" content="noindex, follow">
+<link rel="icon" href="assets/images/logo.webp" type="image/webp">
+<link rel="stylesheet" href="css/styles.css?v=3">
+<style>
+.error-page {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: #121211;
+  color: #edecea;
+  padding: 80px 5.5%;
+  isolation: isolate;
+}
+.error-page:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, #2e281d 0%, #1a1815 45%, #121211 75%);
+  z-index: -2;
+}
+.error-word {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: clamp(140px, 28vw, 360px);
+  font-weight: 800;
+  letter-spacing: -.06em;
+  line-height: 1;
+  z-index: -1;
+  user-select: none;
+  background: linear-gradient(135deg, #ebd098 0%, #caa764 25%, #fff1ce 45%, #b28e46 65%, #ddbe81 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 3px 0 #957639)
+          drop-shadow(0 6px 1px #6e5425)
+          drop-shadow(0 12px 18px rgba(0,0,0,0.85))
+          drop-shadow(0 25px 40px rgba(0,0,0,0.95));
+  opacity: 0.85;
+  pointer-events: none;
+}
+.error-content {
+  max-width: 620px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+.error-content h1 {
+  font-size: clamp(38px, 5.2vw, 68px);
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+.error-content h1 em {
+  color: #e0c48d;
+}
+.error-content p:not(.eyebrow) {
+  font-size: 17px;
+  color: #d1cec9;
+  line-height: 1.8;
+  margin-bottom: 35px;
+}
+.error-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+}
+.error-quicklinks {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 25px;
+  border-top: 1px solid #3d3931;
+  font-size: 13px;
+  color: #ceb882;
+}
+.error-quicklinks a {
+  border-bottom: 1px solid transparent;
+  transition: border-color .2s;
+}
+.error-quicklinks a:hover {
+  border-color: #ceb882;
+}
+</style>
+<script src="js/main.js?v=3" defer></script>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<div class="announcement"><span>CHARATA, CHACO — ARGENTINA</span><span>INDUMENTARIA & BORDADOS</span></div>
+<header class="header">
+  <a class="brand" href="index.html#inicio" aria-label="CPAUL, inicio">
+    <img src="assets/images/logo.webp" alt="" width="60" height="60">
+    <span>CPAUL<small>INDUMENTARIA</small></span>
+  </a>
+  <button class="menu-toggle" aria-expanded="false" aria-controls="navigation" hidden>Menú <span>☰</span></button>
+  <nav id="navigation" aria-label="Navegación principal">
+    <a href="index.html#coleccion">La colección</a>
+    <a href="index.html#identidad">Nuestra identidad</a>
+    <a href="index.html#personalizacion">Personalizados</a>
+    <a href="index.html#contacto">Contacto</a>
+  </nav>
+  <a class="header-cta" href="index.html#consulta">Hablemos de tu idea <span>↗</span></a>
+</header>
+
+<main id="contenido" class="error-page">
+  <div class="error-word" aria-hidden="true">404</div>
+  <div class="error-content">
+    <p class="eyebrow">ERROR 404 / NO ENCONTRADO</p>
+    <h1>El detalle se nos escapó <em>por aquí.</em></h1>
+    <p>La prenda, proyecto o dirección que estás buscando no existe o fue trasladada. No te preocupes: el taller sigue abierto y podés regresar a la colección o consultarnos directamente.</p>
+    <div class="error-actions">
+      <a class="button light" href="index.html#coleccion">Ver la colección <span>↗</span></a>
+      <a class="button dark" href="https://wa.me/5493731432024" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp <span>↗</span></a>
+      <a class="button outline" href="index.html">Volver al inicio <span>←</span></a>
+    </div>
+    <div class="error-quicklinks">
+      <span>Accesos rápidos:</span>
+      <a href="index.html#coleccion">Buzos y Remeras</a>
+      <span>·</span>
+      <a href="index.html#personalizacion">Personalizados</a>
+      <span>·</span>
+      <a href="index.html#contacto">Taller en Charata</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-wordmark" aria-hidden="true"><span>CPAUL</span></div>
+  <div class="footer-bottom">
+    <span>© 2026 CPAUL · Indumentaria & bordados</span>
+    <span>CHARATA, CHACO, ARGENTINA</span>
+    <a href="index.html">Volver a la portada ↑</a>
+  </div>
+</footer>
+</body>
+</html>
