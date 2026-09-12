@@ -122,10 +122,9 @@ if(waShareLink){
  waShareLink.href=`https://wa.me/?text=${waText}`;
 }
 
-// Keep movement active by default, respect prefers-reduced-motion
+// Movement active by default, manual toggle only
 const motionButton=document.querySelector('.motion-toggle');
-const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
-let motionPaused=reducedMotion.matches;
+let motionPaused=false;
 let motionFrame=0;
 const depthLayers=[...document.querySelectorAll('[data-depth]')];
 
@@ -162,12 +161,6 @@ function applyMotion(){
   requestDepth();
  }
 }
-
-// Sync with OS-level reduced motion preference
-reducedMotion.addEventListener('change',()=>{
- motionPaused=reducedMotion.matches;
- applyMotion();
-});
 
 if(motionButton){
  motionButton.hidden=false;
