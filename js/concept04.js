@@ -18,10 +18,10 @@ function focusLayer(index){materialIndex=index;layerButtons.forEach((b,i)=>b.set
 layerButtons.forEach((b,i)=>b.addEventListener('click',()=>focusLayer(i)));focusLayer(0);
 function update(){
 raf=0;const doc=Math.max(1,document.documentElement.scrollHeight-innerHeight);
-root.style.setProperty('--progress',(scrollY/doc).toFixed(4));
+root.style.setProperty('--progress',(scrollY/doc).toFixed(4));root.style.setProperty('--page-percent',(100*scrollY/doc).toFixed(2)+'%');
 const b=hero.getBoundingClientRect(),d=Math.max(1,hero.offsetHeight-innerHeight),p=clamp(-b.top/d,0,1);
 const mb=materials.getBoundingClientRect(),md=Math.max(1,materials.offsetHeight-innerHeight),mp=clamp(-mb.top/md,0,1);
-root.style.setProperty('--hero-p',paused?'0':p.toFixed(4));
+const hp=paused?0:p;root.style.setProperty('--hero-p',hp.toFixed(4));root.style.setProperty('--hero-percent',(hp*100).toFixed(2)+'%');root.style.setProperty('--video-scale',(1.02+hp*.18).toFixed(3));root.style.setProperty('--word-shift-x',(-pointerX*15).toFixed(1)+'px');root.style.setProperty('--word-shift-y',(-hp*40).toFixed(1)+'px');root.style.setProperty('--object-x',(pointerX*19).toFixed(1)+'px');root.style.setProperty('--object-y',(pointerY*13-hp*20).toFixed(1)+'px');root.style.setProperty('--object-roty',(-pointerX*9-hp*12).toFixed(1)+'deg');root.style.setProperty('--object-rotx',(pointerY*7).toFixed(1)+'deg');root.style.setProperty('--object-scale',(1.01+hp*.16).toFixed(3));
 root.style.setProperty('--mx',paused?'0':pointerX.toFixed(3));root.style.setProperty('--my',paused?'0':pointerY.toFixed(3));
 const chapter=p<.31?0:p<.65?1:2;
 if(chapter!==activeChapter){activeChapter=chapter;$$('.cinema-copy').forEach((node,i)=>node.classList.toggle('active',i===chapter));$('#chapter-counter').textContent='0'+(chapter+1)+' / 03';$('#chapter-word').textContent=['ORIGEN','MATERIA','IDENTIDAD'][chapter]}
@@ -36,7 +36,7 @@ function schedule(){if(!raf)raf=requestAnimationFrame(update)}
 addEventListener('scroll',schedule,{passive:true});addEventListener('resize',schedule,{passive:true});
 hero.addEventListener('pointermove',e=>{if(paused||e.pointerType==='touch')return;const r=hero.getBoundingClientRect();pointerX=clamp((e.clientX-r.left)/r.width*2-1,-1,1);pointerY=clamp((e.clientY-r.top)/r.height*2-1,-1,1);schedule()});
 hero.addEventListener('pointerleave',()=>{pointerX=0;pointerY=0;schedule()});
-function setMotion(flag){paused=flag;body.classList.toggle('no-motion',flag);motionBtn.setAttribute('aria-pressed',String(flag));motionBtn.textContent=flag?'ACTIVAR MOVIMIENTO ↗':'PAUSAR MOVIMIENTO Ⅱ';if(flag){clips.forEach(v=>v.pause());if(filmBtn)filmBtn.textContent='REPRODUCIR ▷'}else{if(!film.closest('.process-visual').getBoundingClientRect().top>innerHeight)film.play().catch(()=>{});schedule()}}
+function setMotion(flag){paused=flag;body.classList.toggle('no-motion',flag);motionBtn.setAttribute('aria-pressed',String(flag));motionBtn.textContent=flag?'ACTIVAR MOVIMIENTO ↗':'PAUSAR MOVIMIENTO Ⅱ';if(flag){clips.forEach(v=>v.pause());if(filmBtn)filmBtn.textContent='REPRODUCIR ▷'}else{const r=film.getBoundingClientRect();if(r.top<innerHeight&&r.bottom>0)film.play().catch(()=>{});schedule()}}
 motionBtn.addEventListener('click',()=>setMotion(!paused));
 filmBtn.addEventListener('click',()=>{if(film.paused){film.play().then(()=>filmBtn.textContent='PAUSAR Ⅱ').catch(()=>filmBtn.textContent='VIDEO NO DISPONIBLE')}else{film.pause();filmBtn.textContent='REPRODUCIR ▷'}});
 if('IntersectionObserver' in window){
