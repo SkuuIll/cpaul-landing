@@ -19,10 +19,11 @@ Landing institucional, no ecommerce ni catálogo. Basada en la composición y na
 - css/concept04.css — estilos, composición, escenas, responsive, animaciones.
 - js/concept04.js — capítulos de scroll, interacciones y control de movimiento.
 - assets/images/* — recursos originales del proyecto CPAUL que ya estaban en main.
+- assets/concept-04/* — imágenes y clip local de esta vista previa.
 
 ## Alcances y limitaciones
 - La escena principal y el despiece de telas usan CSS 3D con perspectiva, **no modelos 3D WebGL/GLB**. Las fotos no se convierten en geometría volumétrica real.
-- Imágenes auxiliares y video ambiental se referencian desde la vista previa temporal del Concepto 03. Antes de la fusión hay que migrarlos a assets locales versionados.
+- Las imágenes auxiliares y el video ambiental del Concepto 03 se copiaron a `assets/concept-04/` y quedaron versionados en esta rama. El metraje UHD real de Pexels aún es externo.
 - Un segundo video UHD se carga desde Pexels; requiere elegir y servir una versión optimizada desde el proyecto definitivo y verificar derechos de uso.
 - Las imágenes de productos son ilustrativas del sitio CPAUL; las imágenes de referencia textil no deben presentarse como trabajos reales del taller.
 - La vista previa en Vercel es un despliegue independiente y no se sincroniza automáticamente con GitHub.
@@ -34,8 +35,11 @@ Landing institucional, no ecommerce ni catálogo. Basada en la composición y na
 3. Contrastar escenas con el video 50536.mp4, ajustar timing, perspectiva, retícula, tipografía.
 4. Optimizar carga: poster AVIF/WebP, video MP4/WebM responsivo, caché y lazy loading.
 5. Revisar contraste, teclado, semántica y prefers-reduced-motion.
-6. Sustituir dependencias de la vista previa Concepto 03 por archivos propios.
+6. Optimizar el video UHD remoto de Pexels, conservando un recurso alternativo local.
 7. Al aprobar: revisar metadata SEO y recién entonces evaluar fusión en main.
+
+## Vista previa
+https://cpaul-atelier-concepto04-preview.vercel.app/ — proyecto independiente de Vercel. Confirmado `READY`, HTML, JS, CSS y recursos servidos con HTTP 200. No se afirma validación visual real en Chrome Android en este ciclo. El despliegue no se sincroniza automáticamente con GitHub.
 
 ## Aprobación
 Esperar feedback de diseño del cliente. **No cambiar main ni cpaul.store**.
